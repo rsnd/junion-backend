@@ -38,7 +38,6 @@ var PollsCollection *mongo.Collection
 // the environment database URL
 func ConnectDB() {
 	currentConfig := config.GetConfig()
-	fmt.Println("DATABASE_URL", currentConfig["DATABASE_URL"])
 
 	Client, err := mongo.NewClient(options.Client().ApplyURI(currentConfig["DATABASE_URL"]))
 	if err != nil {
