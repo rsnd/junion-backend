@@ -32,7 +32,8 @@ var config = map[string](map[string]string){
 		"JWT_EXPIERSIN": os.Getenv("DEV_JWT_EXPIERSIN"),
 	},
 	"development": map[string]string{
-		"PORT":          os.Getenv("DEV_PORT"),
+		// "PORT":          os.Getenv("DEV_PORT"),
+		"PORT":          os.Getenv("PORT"),
 		"DATABASE_URL":  os.Getenv("DEV_DATABASE_URL"),
 		"DATABASE_NAME": os.Getenv("DEV_DATABASE_NAME"),
 		"JWT_SECRET":    os.Getenv("DEV_JWT_SECRET"),

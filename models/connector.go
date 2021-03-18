@@ -43,7 +43,7 @@ func ConnectDB() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	Ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	Ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
 	err = Client.Connect(Ctx)
 	if err != nil {
