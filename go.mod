@@ -1,5 +1,5 @@
 module github.com/rsnd/junion-backend
-
+// +heroku goVersion go1.15.6
 go 1.15
 
 require (
